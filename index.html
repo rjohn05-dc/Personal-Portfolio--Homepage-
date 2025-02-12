@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Personal Portfolio</title>
 </head>
 <body class="bg-[url('./images/tokyo.gif')] bg-cover">
@@ -17,22 +18,21 @@
     </div>
 
     <div class="flex flex-wrap justify-center gap-4">
-        <img class="rounded-full border-2 " src="./images/placeholder.jpg">
+        <img class="rounded-full border-2" src="./images/placeholder.jpg">
     </div>
 
     <div class="text-center text-black text-xl">
         <p>My name is Rohan John. My name is Rohan John and I aspire to become a software engineer. I like to go outdoors as well as draw in my free time. I hope to travel the world and visit many cool places when I get older.</p> 
     </div>
 
-   
-
     <div class="text-center">
         <button id="button" class="bg-black text-white rounded-lg p-2">My Work</button>
         <h2 class="text-2xl font-bold">Projects</h2>
-        <div class="flex flex-wrap justify-center gap-4">
+        <div id="projects" class="flex flex-wrap justify-center gap-4">
             <div class="bg-black text-white rounded-lg shadow-lg p-4">
                 <h3 class="text-xl font-bold">Flexbox Layout Project</h3>
                 <p>Description of Project 1</p>
+                <img src="./images/ArcticFox.png">
             </div>
             <div class="bg-black rounded-lg shadow-lg p-4 text-white">
                 <h3 class="text-xl font-bold">Picture Grid Project</h3>
@@ -45,11 +45,13 @@
         </div>
     </div>
 
-  
     <script>
-        $document.getready(function(){
-            
+        $(document).ready(function(){
+            $("#projects").hide(); // Hide projects section initially
+            $("#button").click(function(){
+                $("#projects").slideToggle(); // Toggle slide up/down
             });
+        });
     </script>
     
 </body>
