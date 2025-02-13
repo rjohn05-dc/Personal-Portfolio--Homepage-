@@ -8,12 +8,7 @@
     <title>Personal Portfolio</title>
 </head>
 <body class="bg-[url('./images/tokyo.gif')] bg-cover">
-    <style>
-body {
-        cursor: url('./images/katanacursor.jpg') 16 16, auto; 
-      }
-    
-    </style>
+
     
     <h1 class="text-center font-bold text-4xl text-black mt-4">Rohan John</h1>
 
@@ -30,19 +25,19 @@ body {
     </div>
 
     <div class="flex flex-wrap justify-center gap-4 mt-4">
-        <img class="rounded-full border-2 w-[200px] h-[200px] object-cover" src="./images/pfp.jpg" alt="Profile Picture">
+        <img class="rounded-full border-2 w-[400px] h-[400px] object-cover" src="./images/pfp.jpg" alt="Profile Picture">
     </div>
 
     <div class="text-center text-black text-xl mt-4 px-6">
         <p>My name is Rohan John and I aspire to become a software engineer. My skills include HTML,CSS, TailWind, JavaScript, and Jquery. I like to go outdoors as well as draw in my free time. I hope to travel the world and visit many cool places when I get older.</p> 
     </div>
 
-    <!-- "My Work" Button -->
+    <!-- "My Work" Button  -->
     <div class="text-center mt-6">
         <button id="button" class="bg-black text-white rounded-lg p-2">My Work</button>
         <h2 class="text-2xl font-bold mt-4">Projects</h2>
 
-        <!-- Projects Section (Initially Hidden) -->
+        <!-- Making the Projects Section -->
         <div id="projects" class="flex flex-wrap justify-center gap-6 mt-4">
             <div class="bg-black text-white rounded-lg shadow-lg p-4 w-[320px]">
                 <h3 class="text-xl font-bold">jQuery Animal Site</h3>
@@ -65,7 +60,7 @@ body {
 
     <div class="text-center font-bold mt-6">
         <h2 class="text-2xl font-bold">Contact Me</h2>
-    
+    <!-- This form tag  formats the entire form. Creates seperate input text boxes to put in your information. The tailwind styles it so that the form is centered and the container itself is white. -->
         <form class="mt-4 max-w-lg mx-auto bg-white p-6 rounded-lg shadow-lg">
             <label class="block text-left text-gray-700 font-semibold mb-1" for="name">Name:</label>
             <input type="text" id="name" name="name" class="w-full border rounded-md p-2 mb-4" placeholder="Enter your name">
@@ -79,7 +74,14 @@ body {
             <button type="submit" class="w-full bg-black text-white py-2 rounded-lg hover:bg-gray-800 transition">
                 Send Message
             </button>
-        </form>
+        </form>    
+        <div class="flex justify-center">
+            <img src="./images/rohan4.png"/>
+        </div>
+        
+    </div>
+
+
     </div>
     <script>
         $(document).ready(function(){
@@ -89,18 +91,18 @@ body {
             // Toggle fade out and fade in for navbar when "Toggle Navigation" button is clicked
             $("#toggleNavButton").click(function(){
                 if($("#navbar").is(":visible")){
-                    $("#navbar").fadeOut(1000); // Fade out over 1 second
+                    $("#navbar").fadeOut(1000); 
                 } else {
-                    $("#navbar").fadeIn(1000); // Fade in over 1 second
+                    $("#navbar").fadeIn(1000); 
                 }
             });
 
             // Toggle visibility of projects section when "My Work" button is clicked
             $("#button").click(function(){
                 if($("#projects").is(":visible")){
-                    $("#projects").slideUp(1000); // Slide up over 1 second
+                    $("#projects").slideUp(1000); 
                 } else {
-                    $("#projects").slideDown(1000); // Slide down over 1 second
+                    $("#projects").slideDown(1000); 
                 }
             });
         });
