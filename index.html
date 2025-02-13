@@ -40,22 +40,41 @@
         <div id="projects" class="flex flex-wrap justify-center gap-6 mt-4">
             <div class="bg-black text-white rounded-lg shadow-lg p-4 w-[320px]">
                 <h3 class="text-xl font-bold">jQuery Animal Site</h3>
-                <p>Description of Project 1</p>
+                <p>This project was created using my basic knowldge of Jquery. I was able to create a webpage focused on the Arctic Fox using animations and transitions.  </p>
                 <img class="w-[300px] h-auto object-cover rounded-lg mt-2" src="./images/ArcticFox.png" alt="Project 1">
             </div>
             <div class="bg-black rounded-lg shadow-lg p-4 text-white w-[320px]">
                 <h3 class="text-xl font-bold">Picture Grid Project</h3>
-                <p>Description of Project 2</p>
+                <p>This project was created using my knowledge on how to create rows and columns. I was able to place the images in the right position to make it all flow well together. </p>
                 <img class="w-[300px] h-auto object-cover rounded-lg mt-2" src="./images/grid.png" alt="Project 2">
             </div>
             <div class="bg-black text-white rounded-lg shadow-lg p-4 w-[320px]">
                 <h3 class="text-xl font-bold">Tailwind Challenge</h3>
-                <p>Description of Project 3</p>
+                <p>This project was created using Tailwind. Tailwind is a framework of CSS and it is very flexible. I was able to create an organized HTML file while directly inserting my Tailwind into my code.</p>
                 <img class="w-[300px] h-auto object-cover rounded-lg mt-2" src="./images/Tailwind.png" alt="Project 3">
             </div>
         </div>
     </div>
 
+
+    <div class="text-center font-bold mt-6">
+        <h2 class="text-2xl font-bold">Contact Me</h2>
+    
+        <form class="mt-4 max-w-lg mx-auto bg-white p-6 rounded-lg shadow-lg">
+            <label class="block text-left text-gray-700 font-semibold mb-1" for="name">Name:</label>
+            <input type="text" id="name" name="name" class="w-full border rounded-md p-2 mb-4" placeholder="Enter your name">
+    
+            <label class="block text-left text-gray-700 font-semibold mb-1" for="email">Email:</label>
+            <input type="email" id="email" name="email" class="w-full border rounded-md p-2 mb-4" placeholder="Enter your email">
+    
+            <label class="block text-left text-gray-700 font-semibold mb-1" for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" class="w-full border rounded-md p-2 mb-4" placeholder="Type your message"></textarea>
+    
+            <button type="submit" class="w-full bg-black text-white py-2 rounded-lg hover:bg-gray-800 transition">
+                Send Message
+            </button>
+        </form>
+    </div>
     <script>
         $(document).ready(function(){
             // Fade in navbar when page loads
